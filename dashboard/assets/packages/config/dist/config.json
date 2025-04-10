@@ -41,7 +41,7 @@
             {
               "series": [
                 {
-                  "query": "http_req_failed[?!tags && rate ]"
+                  "query": "http_req_failed[?!tags && gauge]"
                 }
               ],
               "title": "HTTP Request Failed",
@@ -87,7 +87,7 @@
                   "legend": "Request Duration p(95)"
                 },
                 {
-                  "query": "http_req_failed[?!tags && rate]",
+                  "query": "http_req_failed[?!tags && gauge]",
                   "legend": "Request Failed"
                 }
               ],
@@ -178,7 +178,7 @@
             {
               "series": [
                 {
-                  "query": "http_req_failed[?!tags && rate ]"
+                  "query": "http_req_failed[?!tags && gauge]"
                 }
               ],
               "title": "Request Failed Rate",
